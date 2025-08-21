@@ -31,7 +31,8 @@
             <div class="header__info flex align-items-center gap-3">
                 <ul class="flex flex-column xl:flex-row list-none">
                     <li onclick="scrollToSection('home')">Sobre mí</li>
-                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('services')">Conocimientos</li>
+                    <li onclick="scrollToSection('experience')">Experiencia</li>
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
@@ -52,7 +53,7 @@
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-7xl">Beckhan Pacheco Villanueva</h1>
                 <p class="text-gray-500">
-                    Desarrollador Web Full Stack Junior | React, Laravel, APIs REST, MySQL
+                    Desarrollador Junior | React, Laravel, APIs REST, SQL
                 </p>
                 <p class="text-gray-500 mt-2">
                     Estudiante de Ingeniería de Software con experiencia en desarrollo full-stack (React, Laravel, APIs
@@ -62,8 +63,8 @@
                     que mejoren la experiencia del usuario.
                 </p>
                 <div class="home__buttons flex align-items-center gap-2 mt-4">
-                    <a href="./assets/BECKHAN PACHECO.pdf" class="cursor-pointer border-round-lg no-underline" target="_blank"
-                        download>Descargar CV</a>
+                    <a href="./assets/BECKHAN PACHECO.pdf" class="cursor-pointer border-round-lg no-underline"
+                        target="_blank" download>Descargar CV</a>
                     <button onclick="scrollToSection('portfolio')" class="cursor-pointer border-round-lg">Mis
                         proyectos</button>
                 </div>
@@ -77,8 +78,9 @@
 
     </div>
 
-    <!--Conocimientos -->
     <div class="container">
+
+        <!--Conocimientos -->
         <section id="services" class="services min-h-full w-full pb-7">
             <div class="services__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mis Conocimientos</h1>
@@ -120,7 +122,7 @@
                         <p>React Js</p>
                     </div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
                     <div class="service__logo flex align-items-center justify-content-center ">
                         <i class="fa-solid fa-database"></i>
                     </div>
@@ -128,7 +130,7 @@
                         <p>SQL</p>
                     </div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
                     <div class="service__logo flex align-items-center justify-content-center ">
                         <i class="fa-brands fa-laravel"></i>
                     </div>
@@ -136,8 +138,102 @@
                         <p>Laravel</p>
                     </div>
                 </div>
+                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Java</p>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+        <!--EXPERIENCIA -->
+        <section id="experience" class="experience min-h-full w-full pb-8 pt-8">
+            <div class="experience__title flex flex-column gap-3 text-center mb-8">
+                <h1 class="text-3xl md:text-5xl">Mi Experiencia</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Educación y experiencia laboral adquirida a lo largo de mi formación como desarrollador.
+                </p>
+            </div>
+
+            <div class="experience__content grid grid-nogutter justify-content-center gap-6">
+
+                <!-- Columna Educación -->
+                <div class="col-12 md:col-5 flex flex-column gap-5">
+                    <h2 class="text-xl font-bold text-center mb-3">Educación</h2>
+
+                    <!-- Card UTP -->
+                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
+                        <h3 class="flex align-items-center gap-2 text-primary">
+                            <i class="fa-solid fa-book"></i> Formación Universitaria
+                        </h3>
+                        <div class="flex justify-content-between align-items-center">
+                            <h4 class="text-lg font-bold">Ingeniería de Software</h4>
+                            <span class="experience__bgText text-sm font-bold">En curso</span>
+                        </div>
+                        <p class="text-gray-400 mt-2">Actualmente cursando el 7mo ciclo</p>
+                        <span class="font-bold text-primary">Universidad Tecnológica del Perú</span>
+                    </div>
+
+                    <!-- Card Senati -->
+                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
+                        <h3 class="flex align-items-center gap-2 text-primary">
+                            <i class="fa-solid fa-book"></i>Formación Técnica
+                        </h3>
+                        <div class="flex justify-content-between align-items-center">
+                            <h4 class="text-lg font-bold">Ingeniería de Software e Inteligencia Artificial</h4>
+                            <span class="experience__bgText text-sm font-bold">2020 - 2023</span>
+                        </div>
+                        <p class="text-gray-400 mt-2">Carrera técnica culminada en junio 2023</p>
+                        <span class="font-bold text-primary">Servicio Nacional de Adiestramiento en Trabajo Industrial
+                            (Senati)</span>
+                    </div>
+
+                </div>
+
+                <!-- Columna Experiencia Laboral -->
+                <div class="col-12 md:col-5 flex flex-column gap-5">
+                    <h2 class="text-xl font-bold text-center mb-3">Experiencia Laboral</h2>
+
+                    <!-- Geor Workspace -->
+                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
+                        <h3 class="flex align-items-center gap-2 text-primary">
+                            <i class="fa-solid fa-briefcase"></i> Desarrollador Web (Prácticas)
+                        </h3>
+                        <div class="flex justify-content-between align-items-center">
+                            <h4 class="text-lg font-bold">Geor Workspace</h4>
+                            <span class="experience__bgText text-sm font-bold">Ago. 2024 - Abr. 2025</span>
+                        </div>
+                        <p class="text-gray-400 mt-2">
+                            - Integración de APIs REST en el Frontend.<br>
+                            - Desarrollo de interfaces dinámicas con Vue y Nuxt.js.<br>
+                            - Implementación de blog corporativo con Nuxt.js y APIs.<br>
+                            - Pruebas de integración con Postman.
+                        </p>
+                    </div>
+
+                    <!-- Getbyte -->
+                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
+                        <h3 class="flex align-items-center gap-2 text-primary">
+                            <i class="fa-solid fa-briefcase"></i> Desarrollador Web (Prácticas)
+                        </h3>
+                        <div class="flex justify-content-between align-items-center">
+                            <h4 class="text-lg font-bold">Getbyte S.A.C</h4>
+                            <span class="experience__bgText text-sm font-bold">Mar. 2023 - Jul. 2023</span>
+                        </div>
+                        <p class="text-gray-400 mt-2">
+                            - Creación de componentes React reutilizables.<br>
+                            - Integración frontend (React) y backend (Laravel).<br>
+                            - Trabajo en equipo bajo metodologías ágiles (Scrum).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!--PORTFOLIO -->
         <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
