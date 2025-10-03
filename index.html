@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/Lyon.png" type="image/png">
-    <title>Portafolio Web</title>
+    <title>Portafolio | Beckhan Pacheco</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
     <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header class="flex w-full fixed top-0 z-1">
         <nav class="flex justify-content-between w-full navbar">
             <span class="logo cursor-pointer" onclick="scrollToSection('home')">
@@ -28,11 +27,11 @@
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
-            <div class="header__info flex align-items-center gap-3">
-                <ul class="flex flex-column xl:flex-row list-none">
+            <div class="header__info flex gap-3">
+                <ul class="flex flex-column xl:flex-row list-none align-items-center">
                     <li onclick="scrollToSection('home')">Sobre mí</li>
                     <li onclick="scrollToSection('services')">Conocimientos</li>
-                    <li onclick="scrollToSection('experience')">Experiencia</li>
+                    <li onclick="scrollToSection('experience')">Trayectoria</li>
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
@@ -40,11 +39,9 @@
         </nav>
     </header>
 
-    <!--HOME PAGE -->
     <div class="container">
         <section id="home"
             class="home__page flex flex-column xl:flex-row align-items-center justify-content-between gap-6">
-            <!-- Left content (texto y botones) -->
             <div class="left__content col-12 xl:col-6 flex flex-column gap-4">
                 <div class="message__bubble triangle">
                     <div class="message__text text-center p-2">
@@ -53,14 +50,15 @@
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-7xl">Beckhan Pacheco Villanueva</h1>
                 <p class="text-gray-500">
-                    Desarrollador Junior | React, Laravel, APIs REST, SQL
+                    Estudiante de Ingeniería de Software | Desarrollo Web & Proyectos Tecnológicos
                 </p>
                 <p class="text-gray-500 mt-2">
-                    Estudiante de Ingeniería de Software con experiencia en desarrollo full-stack (React, Laravel, APIs
-                    REST)
-                    y habilidades en automatización y pruebas de software. Me apasiona crear soluciones digitales
-                    eficientes
-                    que mejoren la experiencia del usuario.
+                    Estudiante de Ingeniería de Software (UTP, 5to ciclo) con experiencia en proyectos de
+                    <strong>desarrollo web y gestión de datos</strong>. He trabajado con <strong>React, JavaScript, SQL
+                        y APIs REST</strong>,
+                    además de conocimientos en <strong>Excel y Power BI</strong> para el análisis de información.
+                    Me interesa seguir aprendiendo y aportar en <strong>proyectos tecnológicos</strong> que integren
+                    desarrollo de software y análisis de datos.
                 </p>
                 <div class="home__buttons flex align-items-center gap-2 mt-4">
                     <a href="./assets/BECKHAN PACHECO.pdf" class="cursor-pointer border-round-lg no-underline"
@@ -70,7 +68,6 @@
                 </div>
             </div>
 
-            <!-- Right content (imagen) -->
             <div class="right__content col-12 xl:col-5 flex justify-center xl:justify-end">
                 <img src="assets/foto-perfil.png" alt="Foto perfil" class="profile-img">
             </div>
@@ -80,13 +77,13 @@
 
     <div class="container">
 
-        <!--Conocimientos -->
+        <!-- Conocimientos -->
         <section id="services" class="services min-h-full w-full pb-7">
             <div class="services__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mis Conocimientos</h1>
                 <p class="text-gray-400 text-sm md:text-base">
-                    Manejo de tecnologías y herramientas modernas para el desarrollo web full stack, incluyendo
-                    frontend, backend, bases de datos y control de versiones.
+                    Manejo de tecnologías y herramientas modernas enfocado en el desarrollo de soluciones digitales,
+                    análisis y gestión eficiente de datos.
                 </p>
             </div>
             <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
@@ -150,22 +147,20 @@
             </div>
         </section>
 
-        <!--EXPERIENCIA -->
+        <!-- Experiencia -->
         <section id="experience" class="experience min-h-full w-full pb-8 pt-8">
             <div class="experience__title flex flex-column gap-3 text-center mb-8">
-                <h1 class="text-3xl md:text-5xl">Mi Experiencia</h1>
+                <h1 class="text-3xl md:text-5xl">Mi Trayectoria</h1>
                 <p class="text-gray-400 text-sm md:text-base">
-                    Educación y experiencia laboral adquirida a lo largo de mi formación como desarrollador.
+                    Educación y experiencia adquirida a lo largo de mi formación como desarrollador.
                 </p>
             </div>
 
             <div class="experience__content grid grid-nogutter justify-content-center gap-6">
 
-                <!-- Columna Educación -->
                 <div class="col-12 md:col-5 flex flex-column gap-5">
                     <h2 class="text-xl font-bold text-center mb-3">Educación</h2>
 
-                    <!-- Card UTP -->
                     <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
                         <h3 class="flex align-items-center gap-2 text-primary">
                             <i class="fa-solid fa-book"></i> Formación Universitaria
@@ -174,38 +169,20 @@
                             <h4 class="text-lg font-bold">Ingeniería de Software</h4>
                             <span class="experience__bgText text-sm font-bold">En curso</span>
                         </div>
-                        <p class="text-gray-400 mt-2">Actualmente cursando el 7mo ciclo</p>
                         <span class="font-bold text-primary">Universidad Tecnológica del Perú</span>
                     </div>
-
-                    <!-- Card Senati -->
-                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
-                        <h3 class="flex align-items-center gap-2 text-primary">
-                            <i class="fa-solid fa-book"></i>Formación Técnica
-                        </h3>
-                        <div class="flex justify-content-between align-items-center">
-                            <h4 class="text-lg font-bold">Ingeniería de Software e Inteligencia Artificial</h4>
-                            <span class="experience__bgText text-sm font-bold">2020 - 2023</span>
-                        </div>
-                        <p class="text-gray-400 mt-2">Carrera técnica culminada en junio 2023</p>
-                        <span class="font-bold text-primary">Servicio Nacional de Adiestramiento en Trabajo Industrial
-                            (Senati)</span>
-                    </div>
-
                 </div>
 
-                <!-- Columna Experiencia Laboral -->
                 <div class="col-12 md:col-5 flex flex-column gap-5">
-                    <h2 class="text-xl font-bold text-center mb-3">Experiencia Laboral</h2>
+                    <h2 class="text-xl font-bold text-center mb-3">Experiencia</h2>
 
-                    <!-- Geor Workspace -->
                     <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
                         <h3 class="flex align-items-center gap-2 text-primary">
                             <i class="fa-solid fa-briefcase"></i> Desarrollador Web (Prácticas)
                         </h3>
                         <div class="flex justify-content-between align-items-center">
                             <h4 class="text-lg font-bold">Geor Workspace</h4>
-                            <span class="experience__bgText text-sm font-bold">Ago. 2024 - Abr. 2025</span>
+                            <span class="experience__bgText text-sm font-bold">Sep. 2024 - Mar. 2025</span>
                         </div>
                         <p class="text-gray-400 mt-2">
                             - Integración de APIs REST en el Frontend.<br>
@@ -215,90 +192,114 @@
                         </p>
                     </div>
 
-                    <!-- Getbyte -->
-                    <div class="experience__card flex flex-column gap-2 p-4 border-round-lg shadow-2">
-                        <h3 class="flex align-items-center gap-2 text-primary">
-                            <i class="fa-solid fa-briefcase"></i> Desarrollador Web (Prácticas)
-                        </h3>
-                        <div class="flex justify-content-between align-items-center">
-                            <h4 class="text-lg font-bold">Getbyte S.A.C</h4>
-                            <span class="experience__bgText text-sm font-bold">Mar. 2023 - Jul. 2023</span>
-                        </div>
-                        <p class="text-gray-400 mt-2">
-                            - Creación de componentes React reutilizables.<br>
-                            - Integración frontend (React) y backend (Laravel).<br>
-                            - Trabajo en equipo bajo metodologías ágiles (Scrum).
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
 
-
-        <!--PORTFOLIO -->
+        <!-- Portafolio -->
         <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
             <div class="portfolio__title flex flex-column gap-3 text-center mb-4">
                 <h1 class="text-3xl md:text-5xl">Mis Proyectos</h1>
                 <p class="text-gray-400 text-sm md:text-base ">
-                    Algunos de los proyectos que he desarrollado, destacando mis habilidades en las tecnologías
-                    mencionadas anteriormente.
+                    Algunos de los proyectos que he construido, aplicando diferentes tecnologías y fortaleciendo mis habilidades.                
                 </p>
             </div>
             <div class="portfolio__gallery">
                 <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+
+                    <!-- Proyecto 1 -->
                     <div class="project__card laundry__Landing">
                         <img src="assets/Lavanderia.jpeg" alt="Landing Lavandería React">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
                             <h2>Landing Page - Lavandería Express</h2>
-                            <p>Landing page desarrollada en React.js mostrando los servicios de lavandería, precios
-                                detallados y sección de contacto para que los clientes puedan solicitar sus servicios de
-                                manera rápida y directa.</p>
+                            <div class="tech-badges">
+                                <span>React</span><span>CSS</span><span>Netlify</span>
+                            </div>
+                            <p>
+                                Desarrollo completo de una landing con <strong>React.js, CSS y Netlify</strong>.
+                                Incluyó diseño visual, secciones de precios, contacto y estructura responsive.
+                            </p>
                             <a href="https://lavanderiamanantial.netlify.app/" target="_blank">
                                 <span><i class="fa-solid fa-arrow-right-long"></i></span>
                             </a>
                         </div>
                     </div>
 
+                    <!-- Proyecto 2 -->
                     <div class="project__card e__commerce">
                         <img src="assets/Pucp.jpeg" alt="Propuesta de mejora web PUCP">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
                             <h2>Propuesta de mejora Web - PUCP</h2>
-                            <p>Proyecto realizado a solicitud de un estudiante de la PUCP, donde desarrollé un prototipo
-                                frontend para su presentación, destacando la interfaz de la página de empleos con un
-                                diseño visual claro y funcional.</p>
+                            <div class="tech-badges">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+                            </div>
+                            <p>
+                                Prototipo frontend realizado con <strong>HTML, CSS y JavaScript</strong> como apoyo a un
+                                estudiante PUCP.
+                                Se aplicaron principios básicos de <strong>UX/UI</strong> para mejorar la sección de
+                                empleos.
+                            </p>
                             <a href="https://jorgelandapucp.netlify.app/" target="_blank">
                                 <span><i class="fa-solid fa-arrow-right-long"></i></span>
                             </a>
                         </div>
                     </div>
 
+                    <!-- Proyecto 3 -->
                     <div class="project__card e__commerce">
                         <img src="assets/blogGeor.jpeg" alt="Blog Corporativo Geor">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
                             <h2>Blog Corporativo - Geor Workspace</h2>
-                            <p>Desarrollo del blog corporativo de Geor utilizando Nuxt.js, con integración de APIs REST
-                                para la publicación y visualización de noticias de la empresa.</p>
+                            <div class="tech-badges">
+                                <span>Nuxt.js</span><span>JavaScript</span><span>APIs REST</span><span>Postman</span>
+                            </div>
+                            <p>
+                                Implementación del blog en <strong>Nuxt.js</strong> con integración de <strong>APIs
+                                    REST</strong>
+                                y pruebas con <strong>Postman</strong>. Proyecto en equipo: supervisado por José
+                                Gonzales y con apoyo
+                                de Wilfredo Díaz (diseño en Figma).
+                            </p>
                             <a href="https://blog.geor.app/" target="_blank">
                                 <span><i class="fa-solid fa-arrow-right-long"></i></span>
                             </a>
                         </div>
                     </div>
 
+                    <!-- Proyecto 4 -->
+                    <div class="project__card flores__amarillas">
+                        <img src="assets/flores-amarillas.png" alt="Flores Amarillas - Proyecto Interactivo">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Flores Amarillas</h2>
+                            <div class="tech-badges">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <p>
+                                Proyecto creativo realizado con <strong>HTML, CSS y JavaScript</strong>.
+                                Incluye animaciones de flores, estrellas y césped con música de fondo,
+                                pensado para dispositivos móviles y PC.
+                            </p>
+                            <a href="https://TU-LINK-NETLIFY-VERCEL.com" target="_blank">
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </section>
 
-        <!--FOOTER -->
+
         <footer id="contact" class="footer">
             <div class="footer-container">
-                <!-- Redes sociales -->
                 <div class="footer-social">
                     <div class="social__mediaIcons">
                         <a href="https://www.linkedin.com/in/beckhan-pacheco" target="_blank" aria-label="LinkedIn">
@@ -310,7 +311,6 @@
                     </div>
                 </div>
 
-                <!-- Contacto -->
                 <div class="footer-contact">
                     <div class="phone__number">
                         <i class="fa-solid fa-phone"></i>
@@ -322,7 +322,7 @@
                     </div>
                 </div>
             </div>
-            <p class="footer-copy">© 2025 Beckhan Pacheco.</p>
+            <p class="footer-copy">© 2025 Beckhan Pacheco</p>
         </footer>
 
     </div>
@@ -330,26 +330,6 @@
 
 </body>
 <script>
-    const filterContainer = document.querySelector(".gallery__categories");
-    const galleryItems = document.querySelectorAll(".project__card");
-
-    filterContainer.addEventListener("click", (event) => {
-        if (event.target.classList.contains("filter-item")) {
-            filterContainer.querySelector(".active").classList.remove("active");
-            event.target.classList.add("active")
-            const filterValue = event.target.getAttribute("data-filter")
-            galleryItems.forEach(item => {
-                if (item.classList.contains(filterValue) || filterValue === "all") {
-                    item.classList.remove("hide")
-                    item.classList.add("show")
-                } else {
-                    item.classList.remove("show")
-                    item.classList.add("hide")
-                }
-            })
-        }
-    })
-
     function scrollToSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
     }
